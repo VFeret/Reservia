@@ -1,0 +1,357 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway.eot') format('eot'),
+         url('Raleway.woff') format('woff'),
+         url('Raleway.ttf') format('truetype'),
+         url('Raleway.svg') format('svg');
+}
+
+
+#bloc-page{
+margin: 20px;
+
+}
+
+
+/* header*/
+
+header{
+display: flex;
+justify-content: space-between;
+}
+
+
+
+/* logo*/
+
+#logo_reservia{
+margin-left: px;
+}
+
+
+/* Navigation*/
+
+#ul{
+display: flex;
+}
+
+nav ul{
+display: flex;    
+list-style-type: none;
+}
+
+nav li{
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";    
+margin-right: 15px;
+}
+
+nav a{
+font-size: 1.3em;
+color: #0065FC;
+padding: 20px;
+padding-top: 22px;
+text-decoration: none;
+}
+
+a:hover{
+color: #0065FC;
+border-top: 2px solid;    
+}
+
+
+h4{
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+margin-left: 0px;
+font-size: 1.3em;
+}
+
+p{
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+margin-top: -25px;
+margin-left: 0px;
+color: grey;  
+}
+
+
+/* Moteur de recherche*/
+
+#moteur-recherche{    
+display: flex;
+flex-direction: row;
+
+
+}
+
+.carre-gris{  
+width: 55px;
+height: 55px;
+background: #F2F2F2;
+border-radius: 10px 0px 0px 10px;
+margin-left: 00px;
+
+}
+
+.fas fa-map-marker-alt{    
+font-size: 1.3em;
+}
+
+
+.moteur{    
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+font-weight: bold;
+padding-left: 20px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-top-color: #F2F2F2;
+border-bottom-color: #F2F2F2;
+border-left: none;
+border-right: none;
+width: 200px;
+height: 51px; 
+}
+
+
+.rechercher{
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+color: white;
+font-size: 1em;
+font-weight: bold; 
+width: 150px;
+height: 55px;
+border: none;
+border-radius: 0px 10px 10px 0px;
+background:#0065FC ;
+}
+
+
+/* Filtres*/
+
+
+
+.economique{
+margin-left: 100px;
+text-align: left;
+}
+
+.familiale{
+margin-left: 330px;
+text-align: left;
+}
+
+.romantique{
+margin-left: 520px;
+text-align: left;
+}
+
+.animaux{
+margin-left: 730px;
+text-align: left;
+}
+
+
+.filtres{
+position: absolute;
+border: none;
+}
+
+
+.bouton-economique{
+text-align: center;
+height: 50px; 
+width: 200px;
+position: absolute;    
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+font-style: normal;
+border: none;
+background: #F2F2F2;
+border-radius: 50px 50px 50px 50px;
+margin-left: 0px;
+}
+
+.bouton-familiale{
+text-align: center;
+height: 50px; 
+width: 160px;
+position: absolute;    
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+font-style: normal;
+border: none;
+background: #F2F2F2;
+border-radius: 50px 50px 50px 50px;
+margin-left: 0px;
+}
+
+
+.bouton-romantique{
+text-align: center;
+height: 50px; 
+width: 180px;
+position: absolute;    
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS"; 
+font-style: normal;
+border: none;
+background: #F2F2F2;
+border-radius: 50px 50px 50px 50px;
+margin-left: 0px;
+}
+
+.bouton-animaux{
+text-align: center;
+height: 50px; 
+width: 300px;
+position: absolute;    
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+font-style: normal; 
+border: none;
+background: #F2F2F2;
+border-radius: 50px 50px 50px 50px;
+margin-left: 0px;
+}
+
+
+.rond{
+position: absolute;
+height: 50px; 
+width: 50px; 
+background-color: rgba(0,101,252,0.3);
+border: none;
+border-radius: 50%;
+}
+
+
+
+/* bloc hébergement*/
+
+
+
+section{ 
+display: flex;
+justify-content: flex-start;
+}
+
+#blocs-hebergements{
+display: flex; 
+flex-wrap:wrap ;
+justify-content: center; 
+}
+
+article{
+height: 600px; 
+width: 1100px;
+background-color: #F2F2F2;
+border-radius: 20px 20px 20px 20px;
+margin: 20px;
+}
+
+h3{
+ font-family: Raleway, Arial, "sans-serif", "Trebuchet MS";
+ font-style: normal;
+ font-weight: bold;
+ margin-left: 20px;   
+}
+
+
+
+.carte-hebergement img{ 
+width: 300px;
+height: 150px;
+border: solid;
+border-color: white;
+border-top-width: 4px;
+border-left: -5px;
+border-radius: 18px 18px 0px 0px;
+}
+
+.titre{
+margin: 10px;
+margin-top: -18px;
+
+}
+section p{
+margin-top: -52px;
+margin-left: 11px;
+}
+
+.titre{
+padding-bottom: 20px;
+}
+
+.etoiles{
+margin-top: -10px;
+margin-left: 10px;
+color: #0065FC ; 
+}
+
+.cannebiere{
+position: relative;
+width: 310px;
+height: 250px;
+margin: 10px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+}
+
+.port{
+position: relative;
+width: 310px;
+height: 250px;
+margin: 10px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+}
+
+.mouettes{
+position: relative;
+width: 310px;
+height: 250px;
+margin: 10px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+}
+
+.mer{
+position: relative;
+width: 310px;
+height: 250px;
+margin: 10px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+}
+
+.panier{
+position: relative;
+width: 310px;
+height: 250px;
+margin: 10px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+}
+
+.amina{
+position: relative;
+width: 310px;
+height: 250px;
+margin: 10px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+}
+
+
+aside{
+height: 600px; 
+width: 500px;
+margin: 20px;
+margin right: 20px;
+background-color: #F2F2F2;
+border-radius: 20px 20px 20px 20px;
+}
+
+
+
+
+
+
+
+
+
+
