@@ -8,8 +8,7 @@
 
 
 #bloc-page{
-margin: 20px;
-
+margin: 50px;
 }
 
 
@@ -42,7 +41,6 @@ list-style-type: none;
 
 nav li{
 font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";    
-margin-right: 15px;
 }
 
 nav a{
@@ -59,16 +57,14 @@ border-top: 2px solid;
 }
 
 
-h4{
+h1{
 font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
-margin-left: 0px;
-font-size: 1.3em;
+font-size: 1.2em;
 }
 
 p{
 font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
-margin-top: -25px;
-margin-left: 0px;
+margin-top:-10px;
 color: grey;  
 }
 
@@ -78,8 +74,6 @@ color: grey;
 #moteur-recherche{    
 display: flex;
 flex-direction: row;
-
-
 }
 
 .carre-gris{  
@@ -87,19 +81,21 @@ width: 55px;
 height: 55px;
 background: #F2F2F2;
 border-radius: 10px 0px 0px 10px;
-margin-left: 00px;
-
+position: absolute;
 }
 
-.fas fa-map-marker-alt{    
+.fa-map-marker-alt{    
 font-size: 1.3em;
+position: relative;
+right: -20px;
+top: 15px;
 }
 
 
 .moteur{    
 font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
 font-weight: bold;
-padding-left: 20px;
+padding-left: 70px;
 border-top-width: 1px;
 border-bottom-width: 1px;
 border-top-color: #F2F2F2;
@@ -126,99 +122,57 @@ background:#0065FC ;
 
 /* Filtres*/
 
-
-
-.economique{
-margin-left: 100px;
-text-align: left;
+#filtres{
+display: flex;
 }
 
-.familiale{
-margin-left: 330px;
-text-align: left;
-}
+section h4{
+font-size: 1em;
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS"; 
 
-.romantique{
-margin-left: 520px;
-text-align: left;
-}
-
-.animaux{
-margin-left: 730px;
-text-align: left;
 }
 
 
-.filtres{
-position: absolute;
-border: none;
-}
 
-
-.bouton-economique{
-text-align: center;
+.icones{
 height: 50px; 
 width: 200px;
-position: absolute;    
+border: solid 2px;
+border-color: #F2F2F2;
+border-radius: 50px 50px 50px 50px;
+position: relative;
+}
+
+
+.titre{
 font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+font-weight: bold;
 font-style: normal;
-border: none;
-background: #F2F2F2;
-border-radius: 50px 50px 50px 50px;
-margin-left: 0px;
-}
-
-.bouton-familiale{
+font-size: 1.3em;
 text-align: center;
-height: 50px; 
-width: 160px;
-position: absolute;    
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
-font-style: normal;
-border: none;
-background: #F2F2F2;
-border-radius: 50px 50px 50px 50px;
-margin-left: 0px;
+position: relative;
 }
 
-
-.bouton-romantique{
-text-align: center;
-height: 50px; 
-width: 180px;
-position: absolute;    
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS"; 
-font-style: normal;
-border: none;
-background: #F2F2F2;
-border-radius: 50px 50px 50px 50px;
-margin-left: 0px;
-}
-
-.bouton-animaux{
-text-align: center;
-height: 50px; 
-width: 300px;
-position: absolute;    
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
-font-style: normal; 
-border: none;
-background: #F2F2F2;
-border-radius: 50px 50px 50px 50px;
-margin-left: 0px;
-}
 
 
 .rond{
-position: absolute;
 height: 50px; 
 width: 50px; 
 background-color: rgba(0,101,252,0.3);
 border: none;
 border-radius: 50%;
+border: solid 2px;
+border-color: #F2F2F2;
 }
 
 
+
+.fa-money-bill-wave{
+position: absolute;
+
+}
+ 
+}
 
 /* bloc hébergement*/
 
@@ -231,16 +185,15 @@ justify-content: flex-start;
 
 #blocs-hebergements{
 display: flex; 
-flex-wrap:wrap ;
+flex-wrap: wrap ;
 justify-content: center; 
 }
 
 article{
 height: 600px; 
-width: 1100px;
+width: 1000px;
 background-color: #F2F2F2;
 border-radius: 20px 20px 20px 20px;
-margin: 20px;
 }
 
 h3{
@@ -339,15 +292,22 @@ border-radius: 20px 20px 20px 20px;
 
 aside{
 height: 600px; 
-width: 500px;
-margin: 20px;
+width: 400px;
 margin right: 20px;
 background-color: #F2F2F2;
 border-radius: 20px 20px 20px 20px;
 }
 
 
-
+footer{
+display: flex;
+justify-content: flex-start;
+height: 600px; 
+width: 1500px;
+background-color: #F2F2F2;
+border-radius: 20px 20px 20px 20px;
+}
+}
 
 
 
