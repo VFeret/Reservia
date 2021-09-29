@@ -1,14 +1,17 @@
 @font-face {
-    font-family: 'Raleway';
+    font-family: 'Raleway' sans-serif;
     src: url('Raleway.eot') format('eot'),
          url('Raleway.woff') format('woff'),
          url('Raleway.ttf') format('truetype'),
          url('Raleway.svg') format('svg');
+
 }
 
 
-#bloc-page{
+#bloc_page{
 margin: 50px;
+justify-content: center;
+max width: 1400px;
 }
 
 
@@ -24,7 +27,8 @@ justify-content: space-between;
 /* logo*/
 
 #logo_reservia{
-margin-left: px;
+margin-top: 50px;
+margin-bottom: 30px;
 }
 
 
@@ -39,13 +43,16 @@ display: flex;
 list-style-type: none;
 }
 
+
+
 nav li{
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";    
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";  
+
 }
 
 nav a{
 font-size: 1.3em;
-color: #0065FC;
+color: grey;
 padding: 20px;
 padding-top: 22px;
 text-decoration: none;
@@ -53,30 +60,36 @@ text-decoration: none;
 
 a:hover{
 color: #0065FC;
-border-top: 2px solid;    
+border-top: 3px solid;    
 }
 
+
+nav strong{
+color: #0065FC;
+}
 
 h1{
 font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
-font-size: 1.2em;
+font-size: 1.6em;
+font-weight: bold;
 }
 
-p{
+h2{
 font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+font-size: 1.2em;
+font-weight: normal;
 margin-top:-10px;
-color: grey;  
+margin-bottom:20px;  
 }
 
+p strong{
+ font-weight: bold;   
+}
 
 /* Moteur de recherche*/
 
-#moteur-recherche{    
-display: flex;
-flex-direction: row;
-}
-
-.carre-gris{  
+  
+div .carre_gris{  
 width: 55px;
 height: 55px;
 background: #F2F2F2;
@@ -94,25 +107,27 @@ top: 15px;
 
 .moteur{    
 font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+font-size: 1em;
+width: 250px;
+height: 50px;
 font-weight: bold;
-padding-left: 70px;
 border-top-width: 1px;
-border-bottom-width: 1px;
-border-top-color: #F2F2F2;
-border-bottom-color: #F2F2F2;
-border-left: none;
-border-right: none;
-width: 200px;
-height: 51px; 
 }
 
+
+input{
+border-width: 2px;
+border-color: #F2F2F2;
+margin-left: 55px;
+
+}
 
 .rechercher{
 font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
 color: white;
-font-size: 1em;
+font-size: 1.1em;
 font-weight: bold; 
-width: 150px;
+width: 200px;
 height: 55px;
 border: none;
 border-radius: 0px 10px 10px 0px;
@@ -122,196 +137,396 @@ background:#0065FC ;
 
 /* Filtres*/
 
-#filtres{
+#bloc_filtres{
 display: flex;
+flex-direction: row;
+margin-top: 60px;
+margin-left: -20px;    
 }
 
-section h4{
-font-size: 1em;
+div h4{
+font-size: 1.2em;
 font-family:Raleway, Arial, "sans-serif", "Trebuchet MS"; 
-
 }
 
 
-
-.icones{
-height: 50px; 
-width: 200px;
-border: solid 2px;
-border-color: #F2F2F2;
-border-radius: 50px 50px 50px 50px;
-position: relative;
+.rond{  
+height: 50px;  
+width: 50px;
+background-color: rgba(0,101,252,0.1);
+border: none;
+border-radius: 50%;
+position: absolute;
 }
 
 
-.titre{
+.icone_filtre{
+margin-top: -4px;
+margin-right: 10px;
+}
+
+.titre_filtre{
 font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
 font-weight: bold;
 font-style: normal;
 font-size: 1.3em;
 text-align: center;
+bottom: 6px;
 position: relative;
 }
 
 
-
-.rond{
+.icone_eco{
 height: 50px; 
-width: 50px; 
-background-color: rgba(0,101,252,0.3);
-border: none;
-border-radius: 50%;
-border: solid 2px;
+width: 220px;
+border: solid 3px;
 border-color: #F2F2F2;
+border-radius: 50px 50px 50px 50px;
+margin-left: 30px;
+margin-top: -25px;
 }
 
-
+.titre_eco{
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+font-weight: bold;
+font-style: normal;
+font-size: 1.3em;
+text-align: center;
+right: -20px;
+bottom: 6px;
+position: relative;
+}
 
 .fa-money-bill-wave{
-position: absolute;
+position: relative;
+right: -15px; 
+top: 16px;
+color:#0065FC
+}
 
+
+.icone_familial{
+height: 50px; 
+width: 180px;
+border: solid 3px;
+border-color: #F2F2F2;
+border-radius: 50px 50px 50px 50px;
+margin-left: 26px;
+margin-top: -25px;
 }
- 
+
+.titre_familial{
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+font-weight: bold;
+font-style: normal;
+font-size: 1.3em;
+text-align: center;
+right: -20px;
+bottom: 12px;
+position: relative;
 }
+
+.fa-child{
+position: relative;
+font-size: 1.5em;
+right: -15px; 
+top: 12px;
+color:#0065FC
+}
+
+
+.icone_romantique{
+height: 50px; 
+width: 220px;
+border: solid 3px;
+border-color: #F2F2F2;
+border-radius: 50px 50px 50px 50px;
+margin-left: 26px;
+margin-top: -25px;
+}
+
+.titre_romantique{
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+font-weight: bold;
+font-style: normal;
+font-size: 1.3em;
+text-align: center;
+right: -20px;
+bottom: 11px;
+position: relative;
+}
+
+.fa-heart{
+position: relative;
+font-size: 1.4em;
+right: -13px; 
+top: 15px;
+color:#0065FC
+}
+
+
+.icone_animaux{
+height: 50px; 
+width: 290px;
+border: solid 3px;
+border-color: #F2F2F2;
+border-radius: 50px 50px 50px 50px;
+margin-left: 26px;
+margin-top: -25px;
+}
+
+.titre_animaux{
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+font-weight: bold;
+font-style: normal;
+font-size: 1.3em;
+text-align: center;
+right: -20px;
+bottom: 11px;
+position: relative;
+}
+
+.fa-dog{
+position: relative;
+font-size: 1.5em;
+right: -10px; 
+top: 10px;
+color:#0065FC
+}
+
+
+
+/* info*/
+
+div p{
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+font-weight: normal;
+margin-left: 30px;
+margin-top: 9px;
+margin-bottom: 30px;
+}
+
+.icone_info{
+position: relative;
+top: 5px;
+}
+
+.circle{
+position: absolute;  
+height: 20px;  
+width: 20px;
+border: solid 0.1em;
+border-color: grey;
+border-radius: 50%;
+border-left: 50px;
+margin-top: 18px;
+}
+
+.fa-info{
+position: relative;
+font-size: 0.8em;
+color:#0065FC;
+right:-9px;
+top: 20px;
+}
+
+
+
 
 /* bloc hébergement*/
 
-
-
 section{ 
-display: flex;
-justify-content: flex-start;
+display: flex; 
+margin-top: 20px;
 }
 
-#blocs-hebergements{
+
+#blocs_hebergements{
 display: flex; 
-flex-wrap: wrap ;
-justify-content: center; 
+flex-wrap: wrap;
+justify-content: space-around;
 }
 
 article{
-height: 600px; 
-width: 1000px;
+height: 650px; 
+width: 1020px;
+margin-right: 40px;
+padding: 25px;
 background-color: #F2F2F2;
 border-radius: 20px 20px 20px 20px;
 }
 
-h3{
- font-family: Raleway, Arial, "sans-serif", "Trebuchet MS";
- font-style: normal;
- font-weight: bold;
- margin-left: 20px;   
+div h4{
+font-size: 1em;
 }
 
 
+div h3{
+ font-family: Raleway, Arial, "sans-serif", "Trebuchet MS";
+ font-size: 1.3em;
+ font-style: normal;
+ font-weight: bold;
+ margin-left: 25px; 
+}
 
-.carte-hebergement img{ 
-width: 300px;
+.bloc_blanc{
+width: 290px;
+height: 250px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+margin: 15px;
+box-shadow: 1px 1px 14px grey;
+}
+
+.carte_hebergement img{ 
+width: 280px;
 height: 150px;
 border: solid;
 border-color: white;
-border-top-width: 4px;
-border-left: -5px;
+border-top-width: 5px;
+border-left-width:5px;
+border-right-width: 5px;
 border-radius: 18px 18px 0px 0px;
 }
 
 .titre{
 margin: 10px;
-margin-top: -18px;
-
-}
-section p{
-margin-top: -52px;
-margin-left: 11px;
-}
-
-.titre{
+margin-top:-18px;
 padding-bottom: 20px;
 }
 
+
+section p{
+color: black;    
+font-size: 0.9em ;
+font-weight: normal;
+margin-top: -50px;
+margin-left: 11px;
+}
+
+
+article strong{
+font-weight: bold;
+}
+
 .etoiles{
-margin-top: -10px;
+margin-top: -24px;
 margin-left: 10px;
-color: #0065FC ; 
 }
 
-.cannebiere{
-position: relative;
-width: 310px;
-height: 250px;
-margin: 10px;
-background-color: white;
-border-radius: 20px 20px 20px 20px;
+.fa-star{
+ color:#0065FC ;   
 }
 
-.port{
-position: relative;
-width: 310px;
-height: 250px;
-margin: 10px;
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-}
-
-.mouettes{
-position: relative;
-width: 310px;
-height: 250px;
-margin: 10px;
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-}
-
-.mer{
-position: relative;
-width: 310px;
-height: 250px;
-margin: 10px;
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-}
-
-.panier{
-position: relative;
-width: 310px;
-height: 250px;
-margin: 10px;
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-}
-
-.amina{
-position: relative;
-width: 310px;
-height: 250px;
-margin: 10px;
-background-color: white;
-border-radius: 20px 20px 20px 20px;
+.grey{
+ color:#cccccc ;   
 }
 
 
+
+
+
+
+/* Les plus populaires*/
 aside{
-height: 600px; 
-width: 400px;
-margin right: 20px;
+height: 650px; 
+width: 450px;
 background-color: #F2F2F2;
 border-radius: 20px 20px 20px 20px;
 }
+
+
+
+
+.bloc_blanc_populaire{
+width: 290px;
+height: 250px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+margin: 15px;
+}
+
+.carte_photo img{
+width: 280px;
+height: 150px;
+border: solid;
+border-color: white;
+border-top-width: 5px;
+border-left-width:5px;
+border-right-width: 5px;
+border-radius: 18px 18px 0px 0px;   
+}
+
+
+
+
+
+/* Activités à Marseille*/
+section{
+height: 700px; 
+width: 1600 px; 
+}
+
+
+.fd_blanc_port{
+height: 580px; 
+width: 250 px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+margin: 15px;
+box-shadow: 0px 0px 14px grey;
+}
+
+
+.photo{
+ border-radius: 20px 20px 0px 0px;   
+}
+    
+.titre{
+font-family: Raleway, Arial, "sans-serif", "Trebuchet MS";
+font-size: 1.3em;
+font-style: normal;
+font-weight: bold;
+margin-left: 25px;   
+}
+
+
+
+
+
+
+
+/* footer*/
 
 
 footer{
 display: flex;
-justify-content: flex-start;
-height: 600px; 
-width: 1500px;
+justify-content: space-between;
+height: 200px; 
+width: 1550px;
+padding: 50px;
 background-color: #F2F2F2;
-border-radius: 20px 20px 20px 20px;
+border-radius: 5px 0px 0px 5px;
 }
+
+
+footer div{
+font-family: Raleway, Arial, "sans-serif", "Trebuchet MS";  
+height: 200px; 
+width: 600px;
 }
 
 
+footer div h3{ 
+font-weight: bold;
+margin-left: 0px;   
+}
 
 
-
+footer div h4{
+color: black;
+font-weight: normal;
+font-size: 0.9em;
+}
 
 
