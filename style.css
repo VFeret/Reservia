@@ -478,8 +478,8 @@ box-shadow: 0px 0px 14px grey;
 }
 
 
-.photo{
- border-radius: 20px 20px 0px 0px;   
+.photo_port{
+ border-radius: 20px 20px 20px 20px;   
 }
     
 .titre{
@@ -490,9 +490,18 @@ font-weight: bold;
 margin-left: 25px;   
 }
 
+.fd_blanc_pomegues{
+height: 250px; 
+width: 250 px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+margin: 15px;
+box-shadow: 0px 0px 14px grey;
+}
 
-
-
+.photo_pomegues{
+ border-radius: 20px 20px 20px 20px;   
+}
 
 
 
