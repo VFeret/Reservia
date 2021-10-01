@@ -10,9 +10,15 @@
 
 #bloc_page{
 margin: 50px;
-justify-content: center;
-max width: 1400px;
 }
+
+body{
+font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+color: black;
+
+}
+
+
 
 
 /* header*/
@@ -44,12 +50,6 @@ list-style-type: none;
 }
 
 
-
-nav li{
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";  
-
-}
-
 nav a{
 font-size: 1.3em;
 color: grey;
@@ -58,7 +58,7 @@ padding-top: 22px;
 text-decoration: none;
 }
 
-a:hover{
+nav a:hover{
 color: #0065FC;
 border-top: 3px solid;    
 }
@@ -69,13 +69,11 @@ color: #0065FC;
 }
 
 h1{
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
 font-size: 1.6em;
 font-weight: bold;
 }
 
 h2{
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
 font-size: 1.2em;
 font-weight: normal;
 margin-top:-10px;
@@ -106,7 +104,6 @@ top: 15px;
 
 
 .moteur{    
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
 font-size: 1em;
 width: 250px;
 height: 50px;
@@ -123,7 +120,6 @@ margin-left: 55px;
 }
 
 .rechercher{
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
 color: white;
 font-size: 1.1em;
 font-weight: bold; 
@@ -146,7 +142,6 @@ margin-left: -20px;
 
 div h4{
 font-size: 1.2em;
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS"; 
 }
 
 
@@ -166,7 +161,6 @@ margin-right: 10px;
 }
 
 .titre_filtre{
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
 font-weight: bold;
 font-style: normal;
 font-size: 1.3em;
@@ -186,8 +180,17 @@ margin-left: 30px;
 margin-top: -25px;
 }
 
+
+.titre_eco a{   
+color: black;
+}
+
+.titre_eco a: hover{
+color: grey;
+}
+
+
 .titre_eco{
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
 font-weight: bold;
 font-style: normal;
 font-size: 1.3em;
@@ -216,7 +219,7 @@ margin-top: -25px;
 }
 
 .titre_familial{
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
+color: black;
 font-weight: bold;
 font-style: normal;
 font-size: 1.3em;
@@ -246,7 +249,6 @@ margin-top: -25px;
 }
 
 .titre_romantique{
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
 font-weight: bold;
 font-style: normal;
 font-size: 1.3em;
@@ -276,7 +278,6 @@ margin-top: -25px;
 }
 
 .titre_animaux{
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
 font-weight: bold;
 font-style: normal;
 font-size: 1.3em;
@@ -299,7 +300,6 @@ color:#0065FC
 /* info*/
 
 div p{
-font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
 font-weight: normal;
 margin-left: 30px;
 margin-top: 9px;
@@ -335,11 +335,27 @@ top: 20px;
 
 /* bloc hébergement*/
 
-section{ 
-display: flex; 
-margin-top: 20px;
+section{
+width: 99.5%;
+height: 700px;
 }
 
+#blocs_marseille_populaire{
+display: flex; 
+flex-direction: row;
+flex-wrap: nowrap;   
+}
+
+article{ 
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+height: 700px; 
+width: 1050px;
+margin-right: 40px;
+background-color: #F2F2F2;
+border-radius: 20px 20px 20px 20px;
+}
 
 #blocs_hebergements{
 display: flex; 
@@ -347,40 +363,28 @@ flex-wrap: wrap;
 justify-content: space-around;
 }
 
-article{
-height: 650px; 
-width: 1020px;
-margin-right: 40px;
-padding: 25px;
-background-color: #F2F2F2;
-border-radius: 20px 20px 20px 20px;
-}
 
-div h4{
-font-size: 1em;
-}
-
-
-div h3{
- font-family: Raleway, Arial, "sans-serif", "Trebuchet MS";
- font-size: 1.3em;
+.titre_heberg{
+ font-size: 1em;
  font-style: normal;
  font-weight: bold;
- margin-left: 25px; 
+ padding-left: 15px;
+ padding-top: 10px;
+ 
 }
 
 .bloc_blanc{
-width: 290px;
-height: 250px;
+width: 300px;
+height: 230px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
-margin: 15px;
+margin: 20px;
 box-shadow: 1px 1px 14px grey;
 }
 
 .carte_hebergement img{ 
 width: 280px;
-height: 150px;
+height: 130px;
 border: solid;
 border-color: white;
 border-top-width: 5px;
@@ -389,19 +393,23 @@ border-right-width: 5px;
 border-radius: 18px 18px 0px 0px;
 }
 
+
 .titre{
-margin: 10px;
-margin-top:-18px;
-padding-bottom: 20px;
+margin-top: -20px;
+padding-bottom: 25px;
 }
 
+div h4{
+font-size: 0.9em;
+margin-left: -12px;
+}
 
-section p{
+article p{
 color: black;    
 font-size: 0.9em ;
 font-weight: normal;
-margin-top: -50px;
-margin-left: 11px;
+margin-top: -45px;
+margin-left: 13px;
 }
 
 
@@ -410,8 +418,8 @@ font-weight: bold;
 }
 
 .etoiles{
-margin-top: -24px;
-margin-left: 10px;
+margin-top: -20px;
+margin-left: 12px;
 }
 
 .fa-star{
@@ -422,54 +430,114 @@ margin-left: 10px;
  color:#cccccc ;   
 }
 
+div h5{   
+font-size: 1em;
+margin-left: 20px;
+font-style: normal;
+font-weight: bold;
+}
 
+div a{
+color: black;
+text-decoration: none;
+}
 
 
 
 
 /* Les plus populaires*/
-aside{
-height: 650px; 
+
+aside{ 
+height: 700px; 
 width: 450px;
+display: flex;
+flex-direction:column;
 background-color: #F2F2F2;
 border-radius: 20px 20px 20px 20px;
 }
 
+#blocs_blanc_populaire{
+display: flex;
+flex-direction:column;
+align-items: center;
+}
 
+
+.titre_populaire{
+ font-size: 1em;
+ font-style: normal;
+ font-weight: bold;
+ padding-left: 15px; 
+ padding-top: 10px;
+}
 
 
 .bloc_blanc_populaire{
-width: 290px;
-height: 250px;
+display: flex;
+flex-direction: row;
+margin: 20px;
+width: 350px;
+height:170px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
-margin: 15px;
 }
 
+aside div h4{
+margin-top: 30px;
+}
+
+
 .carte_photo img{
-width: 280px;
-height: 150px;
+width: 160px;
+height: 160px;
 border: solid;
 border-color: white;
 border-top-width: 5px;
 border-left-width:5px;
 border-right-width: 5px;
-border-radius: 18px 18px 0px 0px;   
+border-radius: 18px 0px 0px 18px;   
+}
+
+aside p{
+color: black;    
+font-size: 0.7em ;
+font-weight: normal;
+margin-top: -14px;
+margin-left: -12px;
 }
 
 
-
+.etoiles_populaires{
+font-size: 0.8em ;
+margin-top: 55px;
+margin-left: -12px;
+}
 
 
 /* Activités à Marseille*/
 section{
+display: flex;
+flex-direction: row;    
 height: 700px; 
-width: 1600 px; 
+width:  1500px;
+}
+
+#blocs_activites{
+
+}
+
+
+.titre_activites{
+ font-size: 1em;
+ font-style: normal;
+ font-weight: bold;
+ padding-left: 15px;
+ padding-top: 10px;
 }
 
 
 .fd_blanc_port{
-height: 580px; 
+height: 500px; 
 width: 250 px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
@@ -478,19 +546,48 @@ box-shadow: 0px 0px 14px grey;
 }
 
 
-.photo_port{
- border-radius: 20px 20px 20px 20px;   
+.photo img{
+ border-radius: 20px 20px 0px 0px;   
 }
     
 .titre{
-font-family: Raleway, Arial, "sans-serif", "Trebuchet MS";
 font-size: 1.3em;
 font-style: normal;
 font-weight: bold;
-margin-left: 25px;   
+margin-left: 25px;  
 }
 
 .fd_blanc_pomegues{
+height: 280px; 
+width: 350 px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+margin: 15px;
+box-shadow: 0px 0px 14px grey;
+}
+
+
+
+.fd_blanc_frioul{
+height: 180px; 
+width: 250 px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+margin: 15px;
+box-shadow: 0px 0px 14px grey;
+}
+
+
+.fd_blanc_notre_dame{
+height: 210px; 
+width: 250 px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+margin: 15px;
+box-shadow: 0px 0px 14px grey;
+}
+
+.fd_blanc_longchamps{
 height: 250px; 
 width: 250 px;
 background-color: white;
@@ -498,12 +595,6 @@ border-radius: 20px 20px 20px 20px;
 margin: 15px;
 box-shadow: 0px 0px 14px grey;
 }
-
-.photo_pomegues{
- border-radius: 20px 20px 20px 20px;   
-}
-
-
 
 /* footer*/
 
@@ -519,8 +610,7 @@ border-radius: 5px 0px 0px 5px;
 }
 
 
-footer div{
-font-family: Raleway, Arial, "sans-serif", "Trebuchet MS";  
+footer div{  
 height: 200px; 
 width: 600px;
 }
