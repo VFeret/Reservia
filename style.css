@@ -9,7 +9,9 @@
 
 
 #bloc_page{
-margin: 50px;
+width: 1430px;
+margin: auto;
+
 }
 
 body{
@@ -25,6 +27,7 @@ color: black;
 
 header{
 display: flex;
+flex-direction: row;
 justify-content: space-between;
 }
 
@@ -45,7 +48,7 @@ display: flex;
 }
 
 nav ul{
-display: flex;    
+display: flex;   
 list-style-type: none;
 }
 
@@ -86,50 +89,44 @@ p strong{
 
 /* Moteur de recherche*/
 
-  
-div .carre_gris{  
-width: 55px;
-height: 55px;
-background: #F2F2F2;
-border-radius: 10px 0px 0px 10px;
-position: absolute;
+.moteur_recherche{
+display: flex;
+border-radius: 15px;
 }
 
-.fa-map-marker-alt{    
+
+.fa-map-marker-alt{  
+padding: 20px 20px 15px 20px;
 font-size: 1.3em;
-position: relative;
-right: -20px;
-top: 15px;
+background: #F2F2F2;
+border-radius: 10px 0 0 10px;
 }
 
-
-.moteur{    
-font-size: 1em;
-width: 250px;
-height: 50px;
-font-weight: bold;
-border-top-width: 1px;
+.moteur_recherche input{
+height: 50px;    
+border: none;
+border-top: solid 1px #F2F2F2;
+border-bottom: solid 1px #F2F2F2;
+width: 180px;
 }
 
-
-input{
-border-width: 2px;
-border-color: #F2F2F2;
-margin-left: 55px;
-
-}
 
 .rechercher{
+text-align: center;
 color: white;
 font-size: 1.1em;
 font-weight: bold; 
-width: 200px;
-height: 55px;
 border: none;
 border-radius: 0px 10px 10px 0px;
 background:#0065FC ;
+margin-left: -5px;
 }
 
+
+.placeholder {
+color: black;
+font-weight: bold;   
+}
 
 /* Filtres*/
 
@@ -351,7 +348,7 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 height: 700px; 
-width: 1050px;
+width: 990px;
 margin-right: 40px;
 background-color: #F2F2F2;
 border-radius: 20px 20px 20px 20px;
@@ -374,7 +371,7 @@ justify-content: space-around;
 }
 
 .bloc_blanc{
-width: 300px;
+width: 290px;
 height: 230px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
@@ -449,7 +446,7 @@ text-decoration: none;
 
 aside{ 
 height: 700px; 
-width: 450px;
+width: 400px;
 display: flex;
 flex-direction:column;
 background-color: #F2F2F2;
@@ -516,33 +513,31 @@ margin-left: -12px;
 
 /* Activités à Marseille*/
 section{
-display: flex;
-flex-direction: row;    
-height: 700px; 
-width:  1500px;
+width:  1430px;
+height: 700px;
+margin-top: 40px;
 }
-
-#blocs_activites{
-
-}
-
 
 .titre_activites{
  font-size: 1em;
  font-style: normal;
  font-weight: bold;
- padding-left: 15px;
- padding-top: 10px;
+ padding-left: 0px;
+ padding-top: 20px;
 }
 
+#blocs_activites{
+display: flex;
+flex-direction: row;
+}
 
 .fd_blanc_port{
 height: 500px; 
 width: 250 px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
-margin: 15px;
 box-shadow: 0px 0px 14px grey;
+margin-right: 40px;
 }
 
 
@@ -557,15 +552,38 @@ font-weight: bold;
 margin-left: 25px;  
 }
 
-.fd_blanc_pomegues{
+
+#blocs_sous_activites{
+display: flex;
+flex-direction: column;
+}
+
+#blocs2_sous_activites{
+display: flex;
+flex-direction: column;
+}
+
+.fd_blanc_port{
+height: 500px; 
+width: 250 px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+box-shadow: 5px 8px 7px #F2F2F2;
+margin-right: 25px;
+}
+
+
+.fd_blanc_pomegues: nth-child{
+ align-self: flex-start;   
+}
+
+.fd_blanc_pomegues{  
 height: 280px; 
 width: 350 px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
-margin: 15px;
-box-shadow: 0px 0px 14px grey;
+box-shadow: 5px 8px 7px #F2F2F2;
 }
-
 
 
 .fd_blanc_frioul{
@@ -573,8 +591,22 @@ height: 180px;
 width: 250 px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
-margin: 15px;
-box-shadow: 0px 0px 14px grey;
+box-shadow: 5px 8px 7px #F2F2F2;
+margin-top: 40px;
+}
+
+.frioul: nth-child{
+ align-self: flex-end;   
+}
+
+.fd_blanc_calanques{
+height: 500px; 
+width: 250 px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+box-shadow: 5px 8px 7px #F2F2F2;
+margin-right: 25px;
+margin-left: 25px;
 }
 
 
@@ -583,49 +615,53 @@ height: 210px;
 width: 250 px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
-margin: 15px;
-box-shadow: 0px 0px 14px grey;
+box-shadow: 5px 8px 7px #F2F2F2;
 }
+
+
+.fd_blanc_notre_dame: nth-child{
+ align-self: flex-start;   
+}
+
 
 .fd_blanc_longchamps{
 height: 250px; 
 width: 250 px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
-margin: 15px;
-box-shadow: 0px 0px 14px grey;
+box-shadow: 5px 8px 7px #F2F2F2;
+margin-top: 40px;
 }
+
+.fd_blanc_longchamps: nth-child{
+ align-self: flex-end;
+}
+
 
 /* footer*/
 
 
 footer{
 display: flex;
-justify-content: space-between;
-height: 200px; 
+justify-content: flex-start;
+height: 150px; 
 width: 1550px;
 padding: 50px;
 background-color: #F2F2F2;
 border-radius: 5px 0px 0px 5px;
+
 }
 
-
-footer div{  
-height: 200px; 
-width: 600px;
+.titre_footer{
+font-size: 1.1em;
+font-weight: bold ;   
 }
 
-
-footer div h3{ 
-font-weight: bold;
-margin-left: 0px;   
+footer ul{
+list-style-type: none;
+margin-right: 200px;
 }
 
-
-footer div h4{
-color: black;
-font-weight: normal;
-font-size: 0.9em;
+li{
+margin: 10px;
 }
-
-
