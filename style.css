@@ -9,7 +9,7 @@
 
 
 #bloc_page{
-width: 1430px;
+width: 1440px;
 margin: auto;
 
 }
@@ -55,7 +55,7 @@ list-style-type: none;
 
 nav a{
 font-size: 1.3em;
-color: grey;
+color: #0065FC ;
 padding: 20px;
 padding-top: 22px;
 text-decoration: none;
@@ -150,7 +150,10 @@ border: none;
 border-radius: 50%;
 position: absolute;
 }
-
+.rond:hover{
+ text-decoration: none; 
+ background-color: #F2F2F2;  
+}
 
 .icone_filtre{
 margin-top: -4px;
@@ -178,15 +181,6 @@ margin-top: -25px;
 }
 
 
-.titre_eco a{   
-color: black;
-}
-
-.titre_eco a: hover{
-color: grey;
-}
-
-
 .titre_eco{
 font-weight: bold;
 font-style: normal;
@@ -195,6 +189,11 @@ text-align: center;
 right: -20px;
 bottom: 6px;
 position: relative;
+}
+
+.titre_eco:hover{
+text-decoration: none;
+color: #0065FC ;   
 }
 
 .fa-money-bill-wave{
@@ -226,6 +225,13 @@ bottom: 12px;
 position: relative;
 }
 
+.titre_familial:hover{
+text-decoration: none;
+color: #0065FC ;   
+}
+
+
+
 .fa-child{
 position: relative;
 font-size: 1.5em;
@@ -253,6 +259,11 @@ text-align: center;
 right: -20px;
 bottom: 11px;
 position: relative;
+}
+
+.titre_romantique:hover{
+text-decoration: none;
+color: #0065FC ;   
 }
 
 .fa-heart{
@@ -283,6 +294,12 @@ right: -20px;
 bottom: 11px;
 position: relative;
 }
+
+.titre_animaux:hover{
+text-decoration: none;
+color: #0065FC ;   
+}
+
 
 .fa-dog{
 position: relative;
@@ -376,7 +393,7 @@ height: 230px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 margin: 20px;
-box-shadow: 1px 1px 14px grey;
+box-shadow: 1px 1px 14px #bdbdbc;
 }
 
 .carte_hebergement img{ 
@@ -460,13 +477,25 @@ align-items: center;
 }
 
 
-.titre_populaire{
+
+
+.titre_populaire{  
+display: flex;
+justify-content: space-between;
  font-size: 1em;
  font-style: normal;
  font-weight: bold;
  padding-left: 15px; 
  padding-top: 10px;
 }
+
+
+.fa-chart-line{   
+font-size: 1.5em;
+margin-top: 20px;
+margin-right: 25px;
+}
+
 
 
 .bloc_blanc_populaire{
@@ -477,6 +506,7 @@ width: 350px;
 height:170px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
+box-shadow: 1px 1px 14px #bdbdbc;
 }
 
 aside div h4{
@@ -662,6 +692,16 @@ list-style-type: none;
 margin-right: 200px;
 }
 
-li{
+footer li {
+color: black;
 margin: 10px;
 }
+
+ul a{
+text-decoration: none;
+}
+
+footer ul a:hover{
+color: black;
+}
+
