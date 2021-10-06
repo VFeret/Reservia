@@ -1,25 +1,22 @@
+
 @font-face {
     font-family: 'Raleway' sans-serif;
     src: url('Raleway.eot') format('eot'),
          url('Raleway.woff') format('woff'),
          url('Raleway.ttf') format('truetype'),
          url('Raleway.svg') format('svg');
-
 }
 
 
 #bloc_page{
-width: 1440px;
-margin: auto;
-
+width: 100%;
+margin: 0 auto;
 }
 
 body{
 font-family:Raleway, Arial, "sans-serif", "Trebuchet MS";
 color: black;
-
 }
-
 
 
 
@@ -112,7 +109,6 @@ width: 180px;
 
 
 .rechercher{
-    height: 49px;
 text-align: center;
 color: white;
 font-size: 1.1em;
@@ -346,8 +342,6 @@ top: 20px;
 /* bloc hébergement*/
 
 section{
-width: 99.5%;
-height: 700px;
 }
 
 #blocs_marseille_populaire{
@@ -357,12 +351,13 @@ flex-wrap: nowrap;
 }
 
 article{ 
+width: 73%;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-height: 700px; 
-width: 990px;
-margin-right: 40px;
+height: 680px; 
+margin-right:60px;
+padding: 0px 30px 0px 30px;
 background-color: #F2F2F2;
 border-radius: 20px 20px 20px 20px;
 }
@@ -379,7 +374,7 @@ justify-content: space-around;
  font-style: normal;
  font-weight: bold;
  padding-left: 15px;
- padding-top: 10px;
+ padding-top: 5px;
  
 }
 
@@ -458,8 +453,8 @@ text-decoration: none;
 /* Les plus populaires*/
 
 aside{ 
-height: 700px; 
-width: 400px;
+width: 27%;    
+height: 680px; 
 display: flex;
 flex-direction:column;
 background-color: #F2F2F2;
@@ -473,8 +468,6 @@ align-items: center;
 }
 
 
-
-
 .titre_populaire{  
 display: flex;
 justify-content: space-between;
@@ -482,7 +475,7 @@ justify-content: space-between;
  font-style: normal;
  font-weight: bold;
  padding-left: 15px; 
- padding-top: 10px;
+ padding-top: 5px;
 }
 
 
@@ -497,7 +490,7 @@ margin-right: 25px;
 .bloc_blanc_populaire{
 display: flex;
 flex-direction: row;
-margin: 20px;
+margin: 15px;
 width: 350px;
 height:170px;
 background-color: white;
@@ -538,10 +531,19 @@ margin-left: -12px;
 
 
 /* Activités à Marseille*/
-section{
-width:  1430px;
-height: 700px;
-margin-top: 40px;
+
+
+section .titre_activites{  
+width:  100%;
+height: 600px;
+
+
+}
+
+#titre_activites{
+ display: flex; 
+ flex-direction: column;  
+margin-top: 30px;
 }
 
 .titre_activites{
@@ -555,6 +557,7 @@ margin-top: 40px;
 #blocs_activites{
 display: flex;
 flex-direction: row;
+flex-wrap: nowrap;
 }
 
 .fd_blanc_port{
@@ -599,10 +602,6 @@ margin-right: 25px;
 }
 
 
-.fd_blanc_pomegues: nth-child{
- align-self: flex-start;   
-}
-
 .fd_blanc_pomegues{  
 height: 280px; 
 width: 350 px;
@@ -621,9 +620,6 @@ box-shadow: 5px 8px 7px #F2F2F2;
 margin-top: 40px;
 }
 
-.frioul: nth-child{
- align-self: flex-end;   
-}
 
 .fd_blanc_calanques{
 height: 500px; 
@@ -645,10 +641,6 @@ box-shadow: 5px 8px 7px #F2F2F2;
 }
 
 
-.fd_blanc_notre_dame: nth-child{
- align-self: flex-start;   
-}
-
 
 .fd_blanc_longchamps{
 height: 250px; 
@@ -659,28 +651,23 @@ box-shadow: 5px 8px 7px #F2F2F2;
 margin-top: 40px;
 }
 
-.fd_blanc_longchamps: nth-child{
- align-self: flex-end;
-}
 
 
 /* footer*/
 
 
 footer{
+width: 95%;
 display: flex;
-justify-content: flex-start;
 height: 150px; 
-width: 1550px;
-padding: 50px;
+padding: 40px;
 background-color: #F2F2F2;
 border-radius: 5px 0px 0px 5px;
-
 }
 
 .titre_footer{
 font-size: 1.1em;
-font-weight: bold ;   
+font-weight: bold;   
 }
 
 footer ul{
@@ -694,6 +681,7 @@ margin: 10px;
 }
 
 ul a{
+color: black;   
 text-decoration: none;
 }
 
