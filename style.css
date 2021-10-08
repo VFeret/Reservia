@@ -9,7 +9,7 @@
 
 
 #bloc_page{
-width: 100%;
+max-width: 1430px;
 margin: 0 auto;
 }
 
@@ -357,23 +357,22 @@ top: 20px;
 
 /* bloc hébergement*/
 
-section{
-width: 100%;
-}
+
 
 #blocs_marseille_populaire{
 display: flex; 
 flex-direction: row;
+justify-content: space-around;
 flex-wrap: nowrap;   
 }
 
 article{ 
+width: 72%;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-height: 680px; 
-margin-right:60px;
-padding: 0px 30px 0px 30px;
+height: 650px; 
+margin-right:30px;
 background-color: #F2F2F2;
 border-radius: 20px 20px 20px 20px;
 }
@@ -382,6 +381,8 @@ border-radius: 20px 20px 20px 20px;
 display: flex; 
 flex-wrap: wrap;
 justify-content: space-around;
+padding-left: 15px;
+padding-right: 15px;
 }
 
 
@@ -395,16 +396,18 @@ justify-content: space-around;
 }
 
 .bloc_blanc{
+width: 290px;
 height: 230px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
-margin: 20px;
 box-shadow: 1px 1px 14px #bdbdbc;
+margin-bottom: 30px;
+
 }
 
 .carte_hebergement img{ 
-width: 280px;
 height: 130px;
+width: 280px;
 border: solid;
 border-color: white;
 border-top-width: 5px;
@@ -421,7 +424,7 @@ padding-bottom: 25px;
 
 div h4{
 font-size: 0.9em;
-margin-left: -12px;
+margin-left: 2px;
 }
 
 article p{
@@ -467,8 +470,9 @@ text-decoration: none;
 
 /* Les plus populaires*/
 
-aside{     
-height: 680px; 
+aside{ 
+width: 30%;    
+height: 650px; 
 display: flex;
 flex-direction:column;
 background-color: #F2F2F2;
@@ -479,6 +483,7 @@ border-radius: 20px 20px 20px 20px;
 display: flex;
 flex-direction:column;
 align-items: center;
+margin-top: -15px;
 }
 
 
@@ -500,13 +505,12 @@ margin-right: 25px;
 }
 
 
-
 .bloc_blanc_populaire{
 display: flex;
 flex-direction: row;
 margin: 15px;
 width: 350px;
-height:170px;
+height:160px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 box-shadow: 1px 1px 14px #bdbdbc;
@@ -518,8 +522,8 @@ margin-top: 30px;
 
 
 .carte_photo img{
-width: 160px;
-height: 160px;
+width: 150px;
+height: 150px;
 border: solid;
 border-color: white;
 border-top-width: 5px;
@@ -533,35 +537,33 @@ color: black;
 font-size: 0.7em ;
 font-weight: normal;
 margin-top: -14px;
-margin-left: -12px;
+margin-left: 2px;
 }
 
 
 .etoiles_populaires{
 font-size: 0.8em ;
-margin-top: 55px;
-margin-left: -12px;
+margin-top: 45px;
+margin-left: 2px;
 }
 
 
 /* Activités à Marseille*/
 
 
+#blocs_activites{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+}
 
 #titre_activites{
-display: flex; 
-flex-direction: column;  
-margin-top: 30px;
+display: flex;
+flex-direction: column;   
 }
 
-.photo img{
- border-radius: 20px 20px 0px 0px;   
-}
-    
-.titre{
-font-size: 1.3em;
-font-style: normal;
-font-weight: bold;  
+section h3{
+margin-top: 40px;   
 }
 
 
@@ -571,85 +573,38 @@ font-weight: bold;
  font-weight: bold;
 }
 
-#blocs_activites{
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
+.photo1{
+padding-right: 43px;
+}
 
+.bloc1{
+padding-right: 43px;
 }
 
 
-.activites_1{
-display: flex;
-flex-direction: row;
-}
-
-.activites_2{
-display: flex;
-flex-direction: row;
-}
-
-.carte2{
-display: flex;
-flex-direction: column;
+.bloc2{
+padding-left: 43px;
 }
 
 
-.fd_blanc_port{
-height: 500px; 
+.photo img{
+width: 100%;
+border-radius: 20px 20px 0px 0px;   
+}
+    
+.titre{
+font-size: 1.3em;
+font-style: normal;
+font-weight: bold;
+margin-left: 10px;
+}
+
+
+.photo {
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 box-shadow: 0px 0px 14px grey;
-}
-
-
-.fd_blanc_port{
-height: 500px; 
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-box-shadow: 5px 8px 7px #F2F2F2;
-}
-
-
-.fd_blanc_pomegues{  
-height: 280px; 
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-box-shadow: 5px 8px 7px #F2F2F2;
-
-}
-
-
-.fd_blanc_frioul{
-height: 180px; 
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-box-shadow: 5px 8px 7px #F2F2F2;
-}
-
-
-.fd_blanc_calanques{
-height: 500px; 
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-box-shadow: 5px 8px 7px #F2F2F2;
-}
-
-
-.fd_blanc_notre_dame{
-height: 210px; 
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-box-shadow: 5px 8px 7px #F2F2F2;
-}
-
-
-
-.fd_blanc_longchamps{
-height: 250px; 
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-box-shadow: 5px 8px 7px #F2F2F2;
+padding-bottom: 40px;
 }
 
 
