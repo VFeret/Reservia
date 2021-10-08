@@ -37,16 +37,17 @@
 
 
  <!-- Moteur de recherche-->
+<div class="moteur">
 
-<div class="moteur_recherche">
-    <i class="fas fa-map-marker-alt"></i>
-    <form  method="post" action="#">
-        <input class="moteur" type="text" name="barre de recherche" placeholder="Marseille, France" />
-        <input class="rechercher" type="submit" value="Rechercher" name="Rechercher"/>
-    </form>
+        <div class="map">
+            <i class="fas fa-map-marker-alt"></i>
+        </div> 
 
+        <form method="post" action="#">
+        <input class="barre_recherche" type="text" name="barre de recherche" value="Marseille, France"/>   
+        <input class="bt_rechercher" type="reset" value="Rechercher"/>
+        </form>
 </div>
-
 
 
 <div id="bloc_filtres"><!-- Filtres-->
@@ -89,7 +90,8 @@
  </div>
 
 
-<section id="blocs_marseille_populaire"><!-- affichage hebergements + populaires-->
+<div id="blocs_marseille_populaire"><!-- affichage hebergements + populaires-->
+
     <article class="hebergements"><!-- affichage hebergements-->
               <div class="titre_heberg"><h3>Hébergements à Marseille</h3></div>
                 <div id="blocs_hebergements">
@@ -227,7 +229,7 @@
          
     </aside>
               
-</section>
+</div>
 
 
 <section id="titre_activites">
@@ -236,12 +238,17 @@
     <div id="blocs_activites">
 
             
-            <a href="#"><div class="fd_blanc_port">
-            <div class="photo"><img src="images/activites/vieux_port.jpg" alt="Photo du Vieux Port"></div>
-            <div class="titre"><h6>Vieux Port</h6></div>
-            </div></a>
 
-                <div id="blocs_sous_activites">
+        <div class="activites_1">
+                <div class="carte1">
+                    <a href="#"><div class="fd_blanc_port">
+                    <div class="photo"><img src="images/activites/vieux_port.jpg" alt="Photo du Vieux Port"></div>
+                    <div class="titre"><h6>Vieux Port</h6></div>
+                    </div></a>
+                </div>
+
+            <div class="carte2">
+              
                     <a href="#"><div class="fd_blanc_pomegues">
                     <div class="photo"><img src="images/activites/fort_pomegues.jpg" alt="Photo du Fort de Pomègues"></div>
                     <div class="titre"><h6>Fort de Pomègues</h6></div>
@@ -252,17 +259,28 @@
                     <div class="photo"><img src="images/activites/iles_frioul.jpg" alt="Photo des Iles Frioul"></div>
                     <div class="titre"><h6>Iles de Frioul</h6></div>
                     </div></a>
+            </div>
+              
+        </div>
+
+
+        
+
+
+        <div class="activites_2">
+                <div class="carte3">
+
+                    <a href="#"><div class="fd_blanc_calanques">
+                    <div class="photo"><img src="images/activites/calanques.jpg" alt="Photo du Parc national des Calanques"></div>
+                    <div class="titre"><h6>Parc National des Calanques</h6></div>
+                    </div></a>
+
                 </div>
+    
 
-            
 
-                <a href="#"><div class="fd_blanc_calanques">
-                <div class="photo"><img src="images/activites/calanques.jpg" alt="Photo du Parc national des Calanques"></div>
-                <div class="titre"><h6>Parc National des Calanques</h6></div>
-                </div></a>
-
-            
-                <div id="blocs2_sous_activites">
+                    <div class="carte2">
+                    
                     <a href="#"><div class="fd_blanc_notre_dame">
                     <div class="photo"><img src="images/activites/notre_dame.jpg" alt="Photo de Notre-Dame-de-la-Garde"></div>
                     <div class="titre"><h6>Notre-Dame-de-la-Garde</h6></div>
@@ -272,10 +290,35 @@
                     <div class="photo"><img src="images/activites/parc_longchamp.jpg" alt="Photo du Parc Longchamp"></div>
                     <div class="titre"><h6>Parc Longchamps</h6></div>
                     </div></a>
-                </div>
-
+            </div>
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+              
+
+            
+
+                
+            
+                
+                    
+                
+
+    
 </section>
 
 </div><!--fin du bloc page-->

@@ -86,29 +86,45 @@ p strong{
 
 /* Moteur de recherche*/
 
-.moteur_recherche{
+.moteur{
 display: flex;
-border-radius: 15px;
+flex-direction: row;
 }
 
-
-.fa-map-marker-alt{  
-padding: 20px 20px 15px 20px;
-font-size: 1.3em;
+.map{
+height: 50px;
+width: 50px;
 background: #F2F2F2;
 border-radius: 10px 0 0 10px;
 }
 
-.moteur_recherche input{
-height: 49px;    
-border: none;
-border-top: solid 1px #F2F2F2;
-border-bottom: solid 1px #F2F2F2;
-width: 180px;
+.fa-map-marker-alt{
+padding: 14px 20px 10px 17px;  
+font-size: 1.3em;
 }
 
+form{
+display: flex;
+flex-direction: row;
+height: 50px;
 
-.rechercher{
+}
+.barre_recherche{
+width: 230px;
+padding-top: 16px;
+padding-bottom: 14px;
+padding-left: 20px;
+border: none;
+outline: none;
+border-top: solid 0.5px #F2F2F2;
+border-bottom: solid 0.5px #F2F2F2;
+font-size: 1em;
+font-weight: bold;
+}
+
+.bt_rechercher{
+height: 50px;
+width: 150px;
 text-align: center;
 color: white;
 font-size: 1.1em;
@@ -116,7 +132,7 @@ font-weight: bold;
 border: none;
 border-radius: 0px 10px 10px 0px;
 background:#0065FC ;
-margin-left: -5px;
+cursor: pointer;
 }
 
 
@@ -342,6 +358,7 @@ top: 20px;
 /* bloc hébergement*/
 
 section{
+width: 100%;
 }
 
 #blocs_marseille_populaire{
@@ -351,7 +368,6 @@ flex-wrap: nowrap;
 }
 
 article{ 
-width: 73%;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
@@ -379,7 +395,6 @@ justify-content: space-around;
 }
 
 .bloc_blanc{
-width: 290px;
 height: 230px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
@@ -452,8 +467,7 @@ text-decoration: none;
 
 /* Les plus populaires*/
 
-aside{ 
-width: 27%;    
+aside{     
 height: 680px; 
 display: flex;
 flex-direction:column;
@@ -533,42 +547,12 @@ margin-left: -12px;
 /* Activités à Marseille*/
 
 
-section .titre_activites{  
-width:  100%;
-height: 600px;
-
-
-}
 
 #titre_activites{
- display: flex; 
- flex-direction: column;  
+display: flex; 
+flex-direction: column;  
 margin-top: 30px;
 }
-
-.titre_activites{
- font-size: 1em;
- font-style: normal;
- font-weight: bold;
- padding-left: 0px;
- padding-top: 20px;
-}
-
-#blocs_activites{
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-}
-
-.fd_blanc_port{
-height: 500px; 
-width: 250 px;
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-box-shadow: 0px 0px 14px grey;
-margin-right: 40px;
-}
-
 
 .photo img{
  border-radius: 20px 20px 0px 0px;   
@@ -577,64 +561,83 @@ margin-right: 40px;
 .titre{
 font-size: 1.3em;
 font-style: normal;
-font-weight: bold;
-margin-left: 25px;  
+font-weight: bold;  
 }
 
 
-#blocs_sous_activites{
+.titre_activites{
+ font-size: 1em;
+ font-style: normal;
+ font-weight: bold;
+}
+
+#blocs_activites{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+
+}
+
+
+.activites_1{
+display: flex;
+flex-direction: row;
+}
+
+.activites_2{
+display: flex;
+flex-direction: row;
+}
+
+.carte2{
 display: flex;
 flex-direction: column;
 }
 
-#blocs2_sous_activites{
-display: flex;
-flex-direction: column;
-}
 
 .fd_blanc_port{
 height: 500px; 
-width: 250 px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+box-shadow: 0px 0px 14px grey;
+}
+
+
+.fd_blanc_port{
+height: 500px; 
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 box-shadow: 5px 8px 7px #F2F2F2;
-margin-right: 25px;
 }
 
 
 .fd_blanc_pomegues{  
 height: 280px; 
-width: 350 px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 box-shadow: 5px 8px 7px #F2F2F2;
+
 }
 
 
 .fd_blanc_frioul{
 height: 180px; 
-width: 250 px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 box-shadow: 5px 8px 7px #F2F2F2;
-margin-top: 40px;
 }
 
 
 .fd_blanc_calanques{
 height: 500px; 
-width: 250 px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 box-shadow: 5px 8px 7px #F2F2F2;
-margin-right: 25px;
-margin-left: 25px;
 }
 
 
 .fd_blanc_notre_dame{
 height: 210px; 
-width: 250 px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 box-shadow: 5px 8px 7px #F2F2F2;
@@ -644,11 +647,9 @@ box-shadow: 5px 8px 7px #F2F2F2;
 
 .fd_blanc_longchamps{
 height: 250px; 
-width: 250 px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 box-shadow: 5px 8px 7px #F2F2F2;
-margin-top: 40px;
 }
 
 
