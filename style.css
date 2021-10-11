@@ -9,7 +9,7 @@
 
 
 #bloc_page{
-max-width: 1430px;
+max-width: 95%;
 margin: 0 auto;
 }
 
@@ -471,7 +471,7 @@ text-decoration: none;
 /* Les plus populaires*/
 
 aside{ 
-width: 30%;    
+width: 28%;    
 height: 650px; 
 display: flex;
 flex-direction:column;
@@ -552,6 +552,7 @@ margin-left: 2px;
 
 
 #blocs_activites{
+width: 100%;
 display: flex;
 flex-direction: row;
 justify-content: flex-start;
@@ -574,16 +575,16 @@ margin-top: 40px;
 }
 
 .photo1{
-padding-right: 43px;
+padding-right: 36px;
 }
 
 .bloc1{
-padding-right: 43px;
+padding-right: 36px;
 }
 
 
 .bloc2{
-padding-left: 43px;
+padding-left: 36px;
 }
 
 
@@ -613,7 +614,6 @@ padding-bottom: 40px;
 
 
 footer{
-width: 95%;
 display: flex;
 height: 150px; 
 padding: 40px;
