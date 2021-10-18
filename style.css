@@ -37,8 +37,13 @@ margin-bottom: 30px;
 }
 
 div#logo_reservia{
-width: 30%;
+width: 100%;
 }
+
+div#logo_reservia img{
+width: 120px;
+}
+
 
 /* Navigation*/
 
@@ -154,14 +159,16 @@ width: 100%;
 }
 
 #bloc_filtres{
+width: 500px;
 display: flex;
 flex-direction: row;
+flex-wrap: nowrap;
 margin-top: 60px;
 margin-left: -20px;    
 }
 
 .bouton_filtre{
-width: 19%;
+width: 250px;
 }
 
 .rond{  
@@ -377,21 +384,19 @@ flex-wrap: nowrap;
 }
 
 section#hebergements{ 
-max-width: 70%;
-}
-
-div#blocs_hebergements{
-width: 100%;
+max-width: 75%;
 }
 
 
 #hebergements{
-height: 680px;
+height: 720px;
 display: flex;
 flex-direction: column;
 margin-right:20px;
 background-color: #F2F2F2;
 border-radius: 20px 20px 20px 20px;
+padding-left: 40px;
+padding-right: 40px;
 }
 
 #blocs_hebergements{
@@ -406,23 +411,17 @@ justify-content: space-around;
  font-size: 1em;
  font-style: normal;
  font-weight: bold;
- margin-left: 30px;
+ margin-top: 20px;
 }
 
-article{
-width: 100%;
-}
 
-.carte_hebergement{ 
-width: 27%;
-padding-bottom: 0px;
-}
-
-.bloc_blanc{
+.carte_hebergement{
+width: 260px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 box-shadow: 0px 0px 14px grey;
-padding-bottom: 85px;
+padding-bottom: 15px; 
+margin-bottom: 70px;   
 }
 
 div.titre{
@@ -432,7 +431,7 @@ flex-direction: column;
 
 .carte_hebergement img{ 
 height: 140px;   
-width: 100%;
+width: 96%;
 border: solid;
 border-color: white;
 border-top-width: 5px;
@@ -478,8 +477,8 @@ div h5{
 font-size: 1em;
 color: black;
 font-weight: bold;
-margin-left: 20px;
 text-decoration: none;
+margin-top: -30px;
 }
 
 div a{
@@ -498,20 +497,18 @@ max-width: 30%;
 
 
 article{
-width: 100%;
-margin-bottom: 30px;
+margin-bottom: 25px;
 }
 
-#blocs_populaire{
+.blocs_populaire{
 display: flex;
 flex-direction:column;
 justify-content: space-around;
 align-items: center;
 }
 
-#populaire{
-width: 100%;    
-height: 680px; 
+#populaire{    
+height: 720px;
 display: flex;
 flex-direction:column;
 justify-content: flex-start;
@@ -520,40 +517,49 @@ border-radius: 20px 20px 20px 20px;
 }
 
 
-section#populaire div.titre_section{
-width: 100%;  
+section#populaire div.titre_section2{  
 display: flex;
 flex-direction: row;
 justify-content: space-between;
 font-size: 1em;
 font-style: normal;
-font-weight: bold; 
+font-weight: bold;
+margin-top: 20px; 
 }
 
+div.titre_section2{
+width: 100%;
+}
+
+
+.titre_section2{
+ font-size: 1em;
+ font-style: normal;
+ font-weight: bold;
+ margin-left: 25px;
+}
 
 .carte_populaire{
 display: flex;
 flex-direction: row;
-width: 85%;
-height: 160px;
+width: 370px;
+height: 150px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 box-shadow: 1px 1px 14px #bdbdbc;
+margin-bottom: 50px;
 }
 
-.titre_carte{
+div.titre_carte{
+width: 100%;
 display: flex;
 flex-direction: column;
 }
 
-div.titre_carte{
-width: 40%;
-}
-
 
 .carte_populaire img{    
-width: 100%;
-height: 150px;
+width: 140px;
+height: 140px;
 border: solid;
 border-color: white;
 border-top-width: 5px;
@@ -563,31 +569,30 @@ border-radius: 18px 0px 0px 18px;
 }
 
 
+
 .fa-chart-line{   
 font-size: 1.5em;
-margin-top: 40px;
-margin-right: 54px;
+margin-top: 20px;
+margin-right: 40px;
 }
 
-article div.titre_carte h4{
-width: 100%;
+div.titre_carte h4{
+width: 150px;
 font-size: 1em;
-margin-left: 20px;
+margin-left: 10px;
 }
 
-article div.titre_carte p{
-width: 100%;
+div.titre_carte p{
 color: black;    
 font-size: 0.9em;
 font-weight: normal;
 margin-top: -15px;
-margin-left: 20px;
+margin-left: 10px;
 }
 
 
 div.etoiles_populaires{
-width: 100%;
-margin-left: 20px;
+margin-left: 10px;
 margin-top: 10px;
 }
 
@@ -600,48 +605,144 @@ height: 550px;
 }
 
 .titre_activites{
-margin-top: 15px; 
-margin-bottom: 15px;
+padding-top: 30px; 
+}
+
+div#blocs_activites{
+height: 450px;
+width: 100%;
 }
 
 
-.blocs_activites{
-width: 100%;
+#blocs_activites{
 display: flex;
 flex-direction: row;
-justify-content: space-between;
+}
+
+div.bloc1{
+width: 100%;
+}
+
+div.bloc2{
+width: 100%;
+}
+
+div.bloc3{
+width: 100%;
+}
+
+div.bloc4{
+width: 100%;
 }
 
 
 .bloc1{
-width: 23%;
-height: 430px;
+padding-right: 40px;
 }
 
 .bloc2{
-width: 22%;
-height: 430px;
 display: flex;
 flex-direction:column;
 justify-content: space-between;
 }
 
+
 .bloc3{
-width: 23%;
-height: 430px;
+padding-left: 40px;
 }
 
 .bloc4{
-width: 22%;
-height: 420px;
 display: flex;
 flex-direction:column;
+justify-content: space-between;
+padding-left: 40px;
 }
 
 
+.carte1{
+width: 100%;
+height: 450px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+box-shadow: 0px 0px 14px grey;
+}
 
-section h3{
-margin-top: 40px;   
+.carte1 img{   
+width: 100%;
+height: 400px;
+border-radius: 20px 20px 0px 0px;   
+}
+
+
+.carte2{
+width: 100%;    
+height: 260px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+box-shadow: 0px 0px 14px grey;
+}
+
+.carte2 img{
+width: 100%;
+height: 210px;
+border-radius: 20px 20px 0px 0px;   
+}
+
+.carte3{
+width: 100%;
+height: 150px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+box-shadow: 0px 0px 14px grey;
+}
+
+.carte3 img{
+width: 100%;
+height: 100px;
+border-radius: 20px 20px 0px 0px;   
+}
+
+
+.carte4{
+width: 100%;    
+height: 450px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+box-shadow: 0px 0px 14px grey;
+}
+
+.carte4 img{
+width: 100%;
+height: 400px;
+border-radius: 20px 20px 0px 0px;   
+}
+
+.carte5{
+width: 100%;
+height: 210px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+box-shadow: 0px 0px 14px grey;
+}
+
+.carte5 img{
+width: 100%;
+height: 160px;
+border-radius: 20px 20px 0px 0px;   
+}
+
+.carte6{
+width: 100%;
+height: 200px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+box-shadow: 0px 0px 14px grey;
+}
+
+.carte6 img{
+width: 100%;
+height: 150px;
+border-radius: 20px 20px 0px 0px;   
 }
 
 
@@ -649,10 +750,11 @@ margin-top: 40px;
  font-size: 1em;
  font-style: normal;
  font-weight: bold;
+ margin-top: 0px;
 }
 
 
-.photo img{
+img{
 width: 100%;
 border-radius: 20px 20px 0px 0px;   
 }
@@ -663,15 +765,6 @@ font-style: normal;
 font-weight: bold;
 margin-left: 10px;
 }
-
-
-.photo{
-background-color: white;
-border-radius: 20px 20px 20px 20px;
-box-shadow: 0px 0px 14px grey;
-padding-bottom: 40px;
-}
-
 
 
 /* FOOTER*/
@@ -708,3 +801,21 @@ text-decoration: none;
 footer ul a:hover{
 color: black;
 }
+
+
+/* tablettes*/
+
+
+@media screen (min-width: 768px){
+
+#bloc_filtres{
+width: 500px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+
+
+    
