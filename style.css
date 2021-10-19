@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Raleway';
+    font-family:'Raleway';
     src: url('Raleway.eot') format('eot'),
          url('Raleway.woff') format('woff'),
          url('Raleway.ttf') format('truetype'),
@@ -8,7 +8,7 @@
 
 
 #bloc_page{
-max-width: 95%;
+max-width: 1330px;
 margin: 0 auto;
 }
 
@@ -49,12 +49,13 @@ width: 120px;
 
 #ul{
 display: flex;
+flex-direction: row;
 }
 
 nav ul{
 display: flex;   
 list-style-type: none;
-width: 50%;
+width: 100%;
 }
 
 
@@ -155,7 +156,7 @@ cursor: pointer;
 /* FILTRES*/
 
 div#bloc_filtres{
-width: 100%;
+width: 80%;
 }
 
 #bloc_filtres{
@@ -379,24 +380,23 @@ top: 20px;
 width: 100%;
 display: flex; 
 flex-direction: row;
-justify-content: space-around;
-flex-wrap: nowrap;   
+justify-content: space-around;   
 }
 
-section#hebergements{ 
-max-width: 75%;
+section#hebergements{
+height: 70%;
 }
 
 
 #hebergements{
-height: 720px;
+width: 65%;
 display: flex;
 flex-direction: column;
 margin-right:20px;
 background-color: #F2F2F2;
 border-radius: 20px 20px 20px 20px;
-padding-left: 40px;
-padding-right: 40px;
+padding-left: 20px;
+padding-right: 20px;
 }
 
 #blocs_hebergements{
@@ -416,7 +416,7 @@ justify-content: space-around;
 
 
 .carte_hebergement{
-width: 260px;
+width: 230px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 box-shadow: 0px 0px 14px grey;
@@ -430,8 +430,8 @@ flex-direction: column;
 }
 
 .carte_hebergement img{ 
-height: 140px;   
-width: 96%;
+height: 110px;   
+width: 220px;
 border: solid;
 border-color: white;
 border-top-width: 5px;
@@ -491,29 +491,28 @@ text-decoration: none;
 
 /* POPULAIRES*/
 
-section#populaire{
-max-width: 30%;
-}
-
-
 article{
 margin-bottom: 25px;
 }
 
-.blocs_populaire{
-display: flex;
-flex-direction:column;
-justify-content: space-around;
-align-items: center;
-}
-
 #populaire{    
-height: 720px;
+height: 50%;
+width: 35%;
 display: flex;
 flex-direction:column;
-justify-content: flex-start;
 background-color: #F2F2F2;
 border-radius: 20px 20px 20px 20px;
+}
+
+section#populaire{
+height: 70%;
+}
+
+#blocs_populaire{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
 }
 
 
@@ -542,8 +541,7 @@ width: 100%;
 .carte_populaire{
 display: flex;
 flex-direction: row;
-width: 370px;
-height: 150px;
+width: 360px;
 background-color: white;
 border-radius: 20px 20px 20px 20px;
 box-shadow: 1px 1px 14px #bdbdbc;
@@ -573,7 +571,7 @@ border-radius: 18px 0px 0px 18px;
 .fa-chart-line{   
 font-size: 1.5em;
 margin-top: 20px;
-margin-right: 40px;
+margin-right: 50px;
 }
 
 div.titre_carte h4{
@@ -806,15 +804,66 @@ color: black;
 /* tablettes*/
 
 
-@media screen (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1200px){
 
-#bloc_filtres{
-width: 500px;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+#bloc_page{
+width: auto;
+}
+
+header{
+display:flex;
+flex-direction: column;
+width: 100%;
+}
+
+main{
+width: 100%;
+}
+
+
+#blocs_marseille_populaire{
+flex-direction: column-reverse;
 
 }
+#blocs_populaire{
+width: 100%;
+justify-content: center;
+}
+section#populaire{
+width: 90%;
+}
+
+.carte_populaire{
+width: 700px;
+}
+
+
+
+
+
+
+
+
+
+@media all and (max-device-width: 480px)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
 
 
 
