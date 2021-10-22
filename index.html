@@ -16,20 +16,21 @@
 
 <main id="bloc_page">
     
-<header><!--Logo et navigation-->
+<header>
+<div id="barre_header">
+    <a href=""><img class="logo" src="images/logo_reservia.png" alt="Logo Reservia"></a>
 
-  <div id="logo_reservia">
-        <img src="images/logo_reservia.png" alt="Logo Reservia"></div>  
+    <nav>
+        
+        <ul class="menu">
+                <li><a href="#hebergements">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
+                <li><a href="#inscrire"><strong>S'inscrire</strong></a></li>
+        </ul>
+                       
+    </nav>
 
-<!-- navigation-->
-<nav>
-          <ul>
-            <li><a href="#hebergements">Hébergements</a></li>
-            <li><a href="#activites">Activités</a></li>
-            <li><a href="#inscrire"><strong>S'inscrire</strong></a>
-          </ul>
-</nav>
-            
+</div>          
 </header>
 
 <div>
@@ -38,7 +39,6 @@
 </div>
 
 
- <!-- Moteur de recherche-->
 <div id="moteur">
 
         <div class="map">
@@ -54,44 +54,29 @@
 
 <div id="bloc_filtres">
     
-        <div class="icone_filtre">
-            <div class="titre_eco">Filtres</div>
-        </div>
-
-
-        <div class="bouton_filtre">
+       
+       <div><h3>Filtres</h3></div>
+            
             <div class="icone_eco">
-                <i class="rond"></i>
-                <i class="fas fa-money-bill-wave"></i>
-                 <a href=""><div class="titre_eco">Économique</div></a>
+                <i class="fas fa-money-bill-wave rond"></i>
+                 <a href=""><div class="titre">Économique</div></a>  
             </div>
-        </div>
 
-        <div class="bouton_filtre">
-            <div class="icone_familial">
-                <i class="rond"></i>
-                <i class="fas fa-child"></i>
-                <a href=""><div class="titre_familial">Familial</div></a>
+            <div class="icone_eco">
+                <i class="fas fa-child rond"></i>
+                 <a href=""><div class="titre">Familial</div></a>  
             </div>
-        </div>
 
-
-        <div class="bouton_filtre">
-            <div class="icone_romantique">
-                <i class="rond"></i>
-                <i class="fas fa-heart"></i>
-                <a href=""><div class="titre_romantique">Romantique</div></a>
+            <div class="icone_eco">
+                <i class="fas fa-heart rond"></i>
+                 <a href=""><div class="titre">Romantique</div></a>  
             </div>
-        </div>
-        
 
-        <div class="bouton_filtre">
-            <div class="icone_animaux">
-                <i class="rond"></i>
-                <i class="fas fa-dog"></i>
-                <a href=""><div class="titre_romantique">Animaux autorisés</div></a>
+            <div class="icone_eco">
+                <i class="fas fa-dog rond" ></i>
+                 <a href=""><div class="titre">Animaux autorisés</div></a>  
             </div>
-        </div>
+
 </div>
 
 <div>
@@ -103,9 +88,9 @@
  </div>
 
 
-<div id="blocs_marseille_populaire"><!-- affichage hebergements + populaires-->
+<div id="blocs_marseille_populaire">
 
-    <section id="bloc_hebergement"><!-- affichage hebergements-->
+    <section id="bloc_hebergement">
             <h3 id="hebergements">Hébergements à Marseille</h3>
                 
             <div class="hebergements">
@@ -215,7 +200,7 @@
         <div class="titre_section2"><h3>Les plus populaires</h3>
             <i class="fas fa-chart-line"></i></div>
          
-            <div id="populaire">
+            <div class="populaire">
 
                 
                 <a href=""><article>
@@ -338,7 +323,7 @@
 </section>
 
 
-</main><!--fin du bloc page-->
+
 
 
 <footer>
@@ -366,7 +351,7 @@
 
 
 </footer>
-
+</main>
  </body>
 
 
